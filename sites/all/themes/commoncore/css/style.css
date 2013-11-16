@@ -1087,33 +1087,53 @@ div.password-confirm {
 
 input.form-submit,
 a.button {
-  background: #fff url(../images/buttons.png) 0 0 repeat-x;
-  border: 1px solid #e4e4e4;
-  border-bottom: 1px solid #b4b4b4;
-  border-left-color: #d2d2d2;
-  border-right-color: #d2d2d2;
-  color: #3a3a3a;
-  cursor: pointer;
-  font-size: 0.929em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 1em;
-  margin-right: 0.6em; /* LTR */
-  padding: 4px 17px;
-  -khtml-border-radius: 15px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-}
-a.button:link,
-a.button:visited,
-a.button:hover,
-a.button:focus,
-a.button:active {
-  text-decoration: none;
-  color: #5a5a5a;
+    -moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+    background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+    background-color:#3d94f6;
+    -webkit-border-top-left-radius:5px;
+    -moz-border-radius-topleft:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topright:5px;
+    border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-radius-bottomright:5px;
+    border-bottom-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius-bottomleft:5px;
+    border-bottom-left-radius:5px;
+    text-indent:0;
+    border:1px solid #337fed;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    font-style:normal;
+    line-height:25px;
+    width:125px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 0px #1570cd;
 }
 
+a.button:link,
+a.button:visited,
+a.button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6) );
+    background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+    background-color:#1e62d0;
+}
+a.button:focus,
+a.button:active {
+    position:relative;
+    top:1px;
+}
 /* -------------- Form Elements   ------------- */
 
 fieldset {
@@ -1647,4 +1667,32 @@ div.admin-panel .description {
 }
 #footer-wrapper .poll .bar .foreground {
   background-color: #ddd;
+}
+
+.views-exposed-widget {
+  width:30%;
+}
+
+.views-exposed-widget select {
+  width:90%;
+}
+.views-widget-filter-secondary {
+  clear:left;
+}
+
+#block-block-1 {
+  border: 1px #ccc solid;
+border-radius: 5px;
+padding: 0 15px;
+}
+
+.not-logged-in .vertical-tabs,
+.node-readmore,
+#block-system-main .pager {
+  display:none;
+  visibility:hidden;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+margin-top:5px;
 }
